@@ -6,4 +6,4 @@ if (module.hot) {
     module.hot.accept()
 }
 
-alert("Hello, this is just a test !!!")
+//alert("Hello, this is just a test !!!")
