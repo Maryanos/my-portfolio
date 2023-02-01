@@ -1,0 +1,243 @@
+.hide {
+    display:none;
+}
+.inactive-link {
+    pointer-events: none;
+    cursor: default;
+}
+.t-bold {
+    font-weight: 800;
+}
+.p-bold {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.center-v {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.center-h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+// REUSABLE CUSTOM BLOCKS
+
+.content-wrapper {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+
+
+.content-box-img {
+    padding: 0;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+}
+
+// REUSABLE CUSTOM BLOCKS
+
+.content-wrapper {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    padding-top: 10rem;
+    margin-left: auto;
+    margin-right: auto ;
+
+    h4 {
+        text-align: center;
+    }
+}
+
+
+
+.content-box-img {
+    padding: 0;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+}
+
+
+.section-2col {
+    padding: 5rem 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    row-gap: 5rem;
+
+    @include tablet {
+        padding: 2.5rem;
+    }
+    @include laptop-small {
+        padding: 5rem;
+    }
+
+    &__col1,
+    &__col2 {
+
+        @include tablet {
+            padding: 5rem;
+        }
+    }
+    &__col1 {
+        width: 100%;
+
+        @include tablet {
+            width: 50%;
+            padding: 2.5rem;
+        }
+        @include laptop-small {
+            padding: 5rem;
+        }
+    }
+    &__col2 {
+        width: 100%;
+
+        @include tablet {
+            width: 50%;
+            padding: 2.5rem;
+        }
+        @include laptop-small {
+            padding: 5rem;
+        }
+    }
+}
+
+.section-3col {
+    padding: 5rem 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 5rem;
+
+    @include tablet {
+        padding: 2.5rem;
+        row-gap: 0rem;
+    }
+    @include laptop-small {
+        padding: 5rem;
+    }
+    &__col1,
+    &__col2,
+    &__col3 {
+
+        @include tablet {
+            padding: 5rem;
+        }
+    }
+    &__col1,
+    &__col2,
+    &__col3 {
+        width: 100%;
+
+        @include tablet {
+            padding: 2.5rem;
+        }
+        @include laptop-small {
+            width: 33.333%;
+        }
+        @include laptop {
+            padding: 5rem;
+        }
+    }
+}
+
+.section-4col {
+    padding: 5rem 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 5rem;
+
+    @include tablet {
+        padding: 2.5rem;
+        row-gap: 0rem;
+    }
+    @include laptop-small {
+        padding: 5rem;
+    }
+    &__col1,
+    &__col2,
+    &__col3,
+    &__col4 {
+
+        @include tablet {
+            padding: 5rem;
+        }
+    }
+    &__col1,
+    &__col2,
+    &__col3,
+    &__col4 {
+        width: 100%;
+
+        @include tablet {
+            padding: 2.5rem;
+        }
+
+        @include laptop {
+            padding: 5rem;
+            width: 25%;
+        }
+    }
+    &__col1,
+    &__col2 {
+        @include laptop-small {
+            width: 50%;
+        }
+        @include laptop {
+            padding: 5rem;
+            width: 25%;
+        }
+    }
+    &__col3,
+    &__col4 {
+        @include laptop-small {
+            width: 50%;
+        }
+        @include laptop {
+            padding: 5rem;
+            width: 25%;
+        }
+    }
+}
+
+
+
+.img-right {
+    object-position: right;
+}
+.img-left {
+    object-position: left;
+}
+.img-top {
+    object-position: top;
+}
+.img-bottom {
+    object-position: bottom;
+}
+
+.relative {
+    position: relative;
+}

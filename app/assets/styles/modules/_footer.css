@@ -1,0 +1,116 @@
+.ctf {
+    padding: 5rem 2.5rem 10rem;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__content {
+        display: flex;
+        align-items: flex-start;
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+    }
+    &__form {
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5%;
+
+        &__name,
+        &__email {
+            width: 100%;
+            height: 60px;
+            margin-top: 1.5%;
+
+            @mixin tablet {
+                width: 49.25%;
+            }
+        }
+        &__msg {
+            width: 100%;
+            margin: 1.5% 0;
+
+            @mixin laptop {
+                min-width: 700px;
+            }
+        }
+        &__name,
+        &__email,
+        &__msg {
+            padding: 1rem;
+            border-radius: 1rem;
+            background-color: transparent;
+            color: $mainText;
+            border:1px solid $formFrame;
+            outline: none;
+        }
+        input::-webkit-input-placeholder,
+        textarea::-webkit-input-placeholder {
+            color: $placeholder;
+            font-size: 1.7rem;
+        }
+    }
+}
+
+
+
+.send-btn-wrapper {
+    margin-top: 2rem;
+    a {
+        padding: 2rem 5rem;
+        transition: .3s ease-in-out;
+        font-size: 1.9rem;
+        display: block;
+
+        @mixin tablet {
+            padding: 2rem 8rem;
+        }
+        @mixin tablet {
+            padding: 1.7rem 8rem;
+            font-size: 1.9rem;
+
+        }
+    }
+    i {
+        transition: .3s ease-in-out;
+        margin-left: 2rem;
+    }
+    a:hover i {
+        transform: translateX(15px) rotate(55deg);
+    }
+    .cta-btn-send {
+        background-color: $cta;
+        background-size: 300% 300%;
+        box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+        background-image: linear-gradient(to right, $cta 0%, $midBlue 50%, #af17cb 100%);
+        border-radius: 4rem;
+        transition: 0.5s;
+    }
+    .cta-btn-send:hover {
+        background-position: right center;
+        transform: translateY(5px);
+    }
+}
+
+
+
+
+.copyrights {
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    p {
+        font-size: 1.4rem;
+        letter-spacing: .1rem;
+        color: $copyrights;
+    }
+}
+.copyrights p:first-child {
+    font-size: 2rem;
+    color: $mainText;
+    padding-bottom: 3rem;
+}
+

@@ -1,0 +1,59 @@
+.main-header {
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+
+    &__logo {
+        margin-left: 2rem;
+
+        @mixin tablet {
+            margin-left: 7.5rem;
+        }
+
+        img {
+            max-height: 4rem;
+
+            @mixin mobile-mini {
+                max-height: 3rem;
+            }
+            @mixin tablet {
+                max-height: 6rem;
+            }
+        }
+    }
+    &__btn {
+        margin-right: 2rem;
+        a {
+            font-size: 1.9rem;
+            font-weight: 300;
+            display: block;
+        }
+
+        @mixin tablet {
+            margin-right: 7.5rem;
+        }
+    }
+}
+
+.cta-btn-hello {
+    background-color: $cta;
+    background-size: 300% 300%;
+    box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+    background-image: linear-gradient(to right, $cta 0%, $midBlue 50%, #af17cb 100%);
+    padding: 1rem 2rem;
+    border-radius: 4rem;
+    transition: 0.5s;
+
+    @mixin tablet {
+        padding: 1.7rem 5rem;
+        font-size: 1.5rem;
+    }
+}
+.cta-btn-hello:hover {
+    background-position: right center;
+    transform: translateY(5px);
+}
+

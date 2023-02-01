@@ -1,0 +1,100 @@
+html {
+    font-size: 62.5%;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    overflow-x: hidden !important;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    color: $mainText;
+    font-family: 'Montserrat', sans-serif;
+    background-color: $siteBg;
+    width: 100%!important;
+    font-size: 1.7rem;
+    background-image:url("./assets/images/sea2.jpg");
+    background-size: cover;
+    position: relative;
+}
+body.noscroll {
+    overflow: auto!important;
+    position: fixed;
+}
+h1 {
+    font-size: 3rem;
+    line-height: 1.3;
+}
+h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.3;
+
+    @mixin mobile-mini {
+        font-size: 3rem;
+    }
+    @mixin laptop-small {
+        font-size: 4.5rem;
+        line-height: initial;
+        font-weight: 700;
+    }
+}
+h3 {
+    font-weight: 600;
+    font-size: 3rem;
+
+    @mixin mobile-mini {
+        font-size: 3rem;
+    }
+    @mixin laptop-small  {
+        font-size: 4rem;
+        margin-top: 0;
+        margin-bottom: 5rem;
+    }
+}
+h4 {
+    font-size: 2.5rem;
+    font-weight: 500;
+
+    @mixin mobile-mini {
+        font-size: 2rem;
+    }
+    @mixin laptop-small  {
+        font-size: 3rem;
+        margin-top: 0;
+        margin-bottom: 5rem;
+    }
+}
+p {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 300;
+    @mixin tablet {
+        font-size: 1.7rem;
+    }
+}
+a {
+    text-decoration: none;
+    pointer-events: all;
+    color: $mainText;
+}
+/* Scrollbar Firefox */
+* {
+    scrollbar-width: thin;
+	scrollbar-color: $scrollBar $scrollTrack;
+}
+/* Scrollbar Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 10px;
+}
+*::-webkit-scrollbar-track {
+	background: $scrollTrack;
+}
+*::-webkit-scrollbar-thumb {
+	background-color: $scrollBar;
+	border-radius: 20px;
+}
+
+
+
