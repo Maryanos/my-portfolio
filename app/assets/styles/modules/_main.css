@@ -72,7 +72,7 @@
             display: none;
         }
     }
-    
+
     &__box2 {
         margin-top: 2rem;
 
@@ -141,7 +141,7 @@
     }
 
     &__title h2{
-        margin-top: 0;
+        margin: 0 0 1rem;
         font-size: 3.5rem;
         font-weight: 600;
         line-height: 1.3;
@@ -153,6 +153,15 @@
             font-size: 4.5rem;
             line-height: initial;
             font-weight: 700;
+        }
+    }
+    p {
+        font-size: 2rem;
+        color: $mainText;
+        padding-bottom: 3rem;
+
+        @mixin mobile-mini {
+            font-size: 1.7rem;
         }
     }
 }
@@ -198,24 +207,24 @@
     border-radius: 5px;
 }
 .progress-bar-fill1 {
-    animation: bar-anim-1 5s normal forwards; /*width: 100%;*/
+    animation: html-bar 5s normal forwards; /*width: 100%;*/
 }
 .progress-bar-fill2 {
-    animation: bar-anim-2 4s normal forwards; /*width: 80%;*/
+    animation: css-bar 4s normal forwards; /*width: 80%;*/
 }
 .progress-bar-fill3 {
-    animation: bar-anim-3 3s normal forwards;/*width: 60%;*/
+    animation: python-bar 3s normal forwards;/*width: 60%;*/
 }
 .progress-bar-fill4 {
-    animation: bar-anim-4 1.25s normal forwards;/*width: 25%;*/
+    animation: js-bar 1.25s normal forwards;/*width: 25%;*/
 }
 .progress-bar-fill5 {
-    animation: bar-anim-5 1.75s normal forwards;/*width: 35%;*/
+    animation: php-bar 1.75s normal forwards;/*width: 35%;*/
 }
 .progress-bar-fill6 {
-    animation: bar-anim-6 1.25s normal forwards;/*width: 25%;*/
+    animation: mysql-bar 1.25s normal forwards;/*width: 25%;*/
 }
-@keyframes bar-anim-1 {
+@keyframes html-bar {
     0% {
         width: 0;
     }
@@ -223,15 +232,15 @@
         width: 100%;
     }
 }
-@keyframes bar-anim-2 {
+@keyframes css-bar {
     0% {
         width: 0;
     }
     100% {
-        width: 80%;
+        width: 90%;
     }
 }
-@keyframes bar-anim-3 {
+@keyframes python-bar {
     0% {
         width: 0;
     }
@@ -239,7 +248,7 @@
         width: 60%;
     }
 }
-@keyframes bar-anim-4 {
+@keyframes js-bar {
     0% {
         width: 0;
     }
@@ -247,7 +256,7 @@
         width: 25%;
     }
 }
-@keyframes bar-anim-5 {
+@keyframes php-bar {
     0% {
         width: 0;
     }
@@ -255,7 +264,7 @@
         width: 35%;
     }
 }
-@keyframes bar-anim-6 {
+@keyframes mysql-bar {
     0% {
         width: 0;
     }

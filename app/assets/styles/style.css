@@ -12,4 +12,5 @@
 /* Modules */
 @import "modules/_main";
 @import "modules/_header";
+@import "modules/_contact-form";
 @import "modules/_footer";
