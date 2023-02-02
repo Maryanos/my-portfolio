@@ -108,20 +108,32 @@
         transform: scale(1.2);
         color: #67B3FF;
     }
+    @mixin desktop-small {
+
+    }
 }
 
 .icons-wrapper {
+    padding: 2.5rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
+
+    @mixin desktop-small {
+        padding: 0;
+    }
 }
 
 .social-icons {
-    padding: 5rem 2.5rem 0;
+    padding: 3rem 0 0;
     display: flex;
     justify-content: center;
     gap: 3rem;
 
+    @mixin mobile-mini {
+        padding: 3rem 0 0;
+    }
     @mixin desktop-small {
         flex-direction: column;
         align-items: center;
@@ -145,26 +157,32 @@
         color: #67B3FF;
     }
     .left-line {
-        content: "";
-        width: 1px;
-        height: 150px;
-        background-color: $formFrame;
         display: none;
 
         @mixin desktop-small {
+            content: "";
+            width: 1px;
+            height: 150px;
+            background-color: $formFrame;
             display: initial;
+            opacity: .6;
         }
     }
 }
 
 
 .contact-icons {
-    padding: 5rem 2.5rem 0;
+    padding: 3rem 2rem 0;
     display: flex;
     justify-content: center;
     gap: 3rem;
 
-
+    @mixin mobile-mini {
+        padding: 3rem 2rem 0;
+    }
+    @mixin laptop-small {
+        display: flex;
+    }
     @mixin desktop-small {
         flex-direction: column;
         align-items: center;
@@ -172,10 +190,10 @@
         bottom: 0;
         right: 2.5rem;
         gap: 2rem;
-        right: 7.5rem;
+        right: 4.5rem;
     }
-    @mixin laptop-small {
-        display: flex;
+    @mixin desktop {
+        right: 7.5rem;
     }
     a i {
         font-size: 2.5rem;
@@ -188,14 +206,15 @@
         color: #67B3FF;
     }
     .right-line {
-        content: "";
-        width: 1px;
-        height: 100px;
-        background-color: $formFrame;
         display: none;
 
         @mixin desktop-small {
+            content: "";
+            width: 1px;
+            height: 100px;
+            background-color: $formFrame;
             display: initial;
+            opacity: .6;
         }
     }
 }
