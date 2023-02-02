@@ -33,7 +33,6 @@
         margin-top: 10rem;
     }
 
-
     &__box1 {
         display: flex;
         border-left: solid 4px #5085bb;
@@ -73,6 +72,7 @@
             display: none;
         }
     }
+    
     &__box2 {
         margin-top: 2rem;
 
@@ -179,6 +179,7 @@
         }
     }
 }
+
 .progress-bar {
     width: 100%;
     background-color: $barFill;
@@ -197,23 +198,72 @@
     border-radius: 5px;
 }
 .progress-bar-fill1 {
-    width: 100%;
+    animation: bar-anim-1 5s normal forwards; /*width: 100%;*/
 }
 .progress-bar-fill2 {
-    width: 80%;
+    animation: bar-anim-2 4s normal forwards; /*width: 80%;*/
 }
 .progress-bar-fill3 {
-    width: 60%;
+    animation: bar-anim-3 3s normal forwards;/*width: 60%;*/
 }
 .progress-bar-fill4 {
-    width: 25%;
+    animation: bar-anim-4 1.25s normal forwards;/*width: 25%;*/
 }
 .progress-bar-fill5 {
-    width: 35%;
+    animation: bar-anim-5 1.75s normal forwards;/*width: 35%;*/
 }
 .progress-bar-fill6 {
-    width: 25%;
+    animation: bar-anim-6 1.25s normal forwards;/*width: 25%;*/
 }
+@keyframes bar-anim-1 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+@keyframes bar-anim-2 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80%;
+    }
+}
+@keyframes bar-anim-3 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 60%;
+    }
+}
+@keyframes bar-anim-4 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 25%;
+    }
+}
+@keyframes bar-anim-5 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 35%;
+    }
+}
+@keyframes bar-anim-6 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 25%;
+    }
+}
+
 
 .other-skills {
     width: 100%;
