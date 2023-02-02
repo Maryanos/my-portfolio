@@ -146,7 +146,17 @@
         left: 7.5rem;
     }
     a i {
-        font-size: 2.5rem;
+        font-size: 2rem;
+
+        @mixin tablet {
+            font-size: 2.5rem;
+        }
+        @mixin laptop {
+            font-size: 2rem;
+        }
+        @mixin desktop {
+            font-size: 2.5rem;
+        }
     }
     a {
         transition: .3s ease-in-out;
@@ -194,7 +204,17 @@
         right: 7.5rem;
     }
     a i {
-        font-size: 2.5rem;
+        font-size: 2rem;
+
+        @mixin tablet {
+            font-size: 2.5rem;
+        }
+        @mixin laptop {
+            font-size: 2rem;
+        }
+        @mixin desktop {
+            font-size: 2.5rem;
+        }
     }
     a {
         transition: .3s ease-in-out;
