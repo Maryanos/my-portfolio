@@ -15,6 +15,7 @@
 }
 
 
+/* Hero Section */
 .hero {
     padding: 5rem 2.5rem;
     display: flex;
@@ -43,7 +44,6 @@
             display: flex;
             justify-content: flex-start;
         }
-
     }
 
     &__box2 {
@@ -68,6 +68,7 @@
 }
 
 
+/* My skills Section */
 .skills-wrapper {
     padding: 5rem 2.5rem;
     max-width: 1400px;
@@ -84,7 +85,6 @@
         flex-direction: initial;
         padding: 20rem 2.5rem;
     }
-
 }
 .main-skills {
     width: 90%;
@@ -177,7 +177,6 @@
 .progress-bar-fill6 {
     width: 25%;
 }
-
 
 .other-skills {
     width: 100%;
@@ -300,19 +299,18 @@
                 margin-left: 2rem;
                 margin-top: 7rem;
             }
-
         }
         img {
             transition: .5s ease-in-out;
         }
         img:hover {
             transform: rotate(5deg) translateX(-5px);
-
         }
     }
 }
 
 
+/* My Background Section */
 .background {
     padding: 5rem 2.5rem;
     margin-left: auto;
@@ -333,7 +331,6 @@
         margin-top: 0;
         padding: 10rem 10rem;
     }
-
     &__content {
         display: flex;
         flex-direction: column;

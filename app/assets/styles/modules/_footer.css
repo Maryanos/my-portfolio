@@ -55,7 +55,6 @@
     }
 }
 
-
 .send-btn-wrapper {
     margin-top: 2rem;
     a {
@@ -135,24 +134,38 @@
     }
 }
 
-
 .copyrights {
     padding: 5rem 2.5rem;
     display: flex;
     justify-content: center;
     position: relative;
 
+    a {
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
+    a i {
+        font-size: 2.5rem;
+    }
+    i {
+        transition: .3s ease-in-out;
+    }
+    a i:hover {
+        transform: scale(1.2) translateY(-5px);
+        color: #67B3FF;
+    }
     p {
         font-size: 1.4rem;
         letter-spacing: .1rem;
         color: $copyrights;
         text-align: center;
     }
+    :nth-child(2) {
+        font-size: 2rem;
+        color: $mainText;
+        padding-bottom: 3rem;
+    }
 }
-.copyrights p:first-child {
-    font-size: 2rem;
-    color: $mainText;
-    padding-bottom: 3rem;
-}
+
 
 
