@@ -89,9 +89,8 @@
 .main-skills {
     width: 90%;
     padding: 3rem 3rem;
-    background-color: $cardFill;
+    background-color: rgba(20, 46, 72, 0.95);
     border-radius: 2.5rem;
-    opacity: .93;
     margin-bottom: -5rem;
     box-shadow: 5px 5px 30px #0d1730;
     z-index: 2;
@@ -182,8 +181,7 @@
 
 .other-skills {
     width: 100%;
-    background-color: $card2Fill;
-    opacity: .85;
+    background-color: rgba(26, 59, 106, 0.6);
     padding: 8rem 3rem 3rem 3rem;
     border-radius: 2.5rem;
     z-index: 1;
@@ -235,21 +233,21 @@
         &__set1 img,
         &__set2 img,
         &__set3 img {
-            max-height: 45px;
+            max-height: 50px;
             margin: 2rem;
 
             @mixin mobile-mini {
-                max-height: 35px;
+                max-height: 40px;
             }
 
             @mixin tablet {
-                max-height: 55px;
+                max-height: 60px;
             }
             @mixin laptop-small {
-                max-height: 50px;
+                max-height: 60px;
             }
             @mixin laptop {
-                max-height: 60px;
+                max-height: 70px;
             }
         }
         &__set1 img:first-child {
