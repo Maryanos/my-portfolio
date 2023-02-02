@@ -3,7 +3,7 @@ html {
     line-height: 1.5;
     scroll-behavior: smooth;
     box-sizing: border-box;
-    overflow-x: hidden !important;
+    overflow-x: hidden!important;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -17,6 +17,7 @@ body {
     background-image:url("./assets/images/sea2.jpg");
     background-size: cover;
     position: relative;
+    overflow-x: hidden!important;
 }
 body.noscroll {
     overflow: auto!important;

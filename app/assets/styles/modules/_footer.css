@@ -93,15 +93,59 @@
     }
 }
 
-
-.copyrights {
-    padding: 5rem;
+.social-icons {
+    padding: 5rem 2.5rem 0;
     display: flex;
     justify-content: center;
+    gap: 3rem;
+
+
+    @mixin desktop-small {
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 2.5rem;
+        gap: 2rem;
+        left: 7.5rem;
+    }
+    @mixin laptop-small {
+        display: flex;
+    }
+    a i {
+        font-size: 2.5rem;
+    }
+    a {
+        transition: .3s ease-in-out;
+    }
+    a:hover {
+        transform: scale(1.5);
+    }
+    .left-line {
+        content: "";
+        width: 1px;
+        height: 150px;
+        background-color: $formFrame;
+        display: none;
+
+        @mixin desktop-small {
+            display: initial;
+        }
+    }
+}
+
+
+.copyrights {
+    padding: 5rem 2.5rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
     p {
         font-size: 1.4rem;
         letter-spacing: .1rem;
         color: $copyrights;
+        text-align: center;
     }
 }
 .copyrights p:first-child {
@@ -109,4 +153,5 @@
     color: $mainText;
     padding-bottom: 3rem;
 }
+
 
