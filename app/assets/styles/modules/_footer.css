@@ -120,6 +120,7 @@
     }
     a:hover {
         transform: scale(1.5);
+        color: #67B3FF;
     }
     .left-line {
         content: "";
