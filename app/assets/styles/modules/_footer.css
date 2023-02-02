@@ -126,25 +126,25 @@
 }
 
 .social-icons {
-    padding: 3rem 0 0;
+    padding: 3rem 2rem 0;
     display: flex;
     justify-content: center;
     gap: 3rem;
 
-    @mixin mobile-mini {
-        padding: 3rem 0 0;
-    }
-    @mixin desktop-small {
+    @mixin laptop {
         flex-direction: column;
         align-items: center;
         position: fixed;
         bottom: 0;
         left: 2.5rem;
         gap: 2rem;
-        left: 7.5rem;
+        left: 4rem;
     }
     @mixin laptop-small {
         display: flex;
+    }
+    @mixin desktop {
+        left: 7.5rem;
     }
     a i {
         font-size: 2.5rem;
@@ -159,7 +159,7 @@
     .left-line {
         display: none;
 
-        @mixin desktop-small {
+        @mixin laptop {
             content: "";
             width: 1px;
             height: 150px;
@@ -183,14 +183,13 @@
     @mixin laptop-small {
         display: flex;
     }
-    @mixin desktop-small {
+    @mixin laptop {
         flex-direction: column;
         align-items: center;
         position: fixed;
         bottom: 0;
-        right: 2.5rem;
+        right: 2rem;
         gap: 2rem;
-        right: 4.5rem;
     }
     @mixin desktop {
         right: 7.5rem;
@@ -208,7 +207,7 @@
     .right-line {
         display: none;
 
-        @mixin desktop-small {
+        @mixin laptop {
             content: "";
             width: 1px;
             height: 100px;

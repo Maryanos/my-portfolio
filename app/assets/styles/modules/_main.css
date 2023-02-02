@@ -29,16 +29,31 @@
     }
     @mixin laptop-small {
         flex-wrap: nowrap;
-        max-width: 1200px;
+        max-width: 1350px;
         margin-top: 10rem;
     }
 
 
     &__box1 {
-        padding-right: 3rem;
+        display: flex;
+        border-left: solid 4px #5085bb;
+        border-bottom: solid 4px #5085bb;
+        align-items: flex-end;
 
+        @mixin laptop-small {
+            margin-right: 2rem;
+            display: flex;
+            border-right: solid 7px #5085bb;
+            border-bottom: solid 7px #5085bb;
+            border-left: none;
+            align-items: flex-end;
+        }
         img {
-            max-height: 14rem;
+            max-height: 180px;
+
+            @mixin tablet {
+                max-height: 250px;
+            }
         }
         @mixin laptop-small {
             display: flex;
@@ -46,6 +61,18 @@
         }
     }
 
+    .mr-standard {
+        display: none;
+
+        @mixin laptop-small {
+            display: initial;
+        }
+    }
+    .mr-flipped {
+        @mixin laptop-small {
+            display: none;
+        }
+    }
     &__box2 {
         margin-top: 2rem;
 
@@ -85,6 +112,13 @@
         flex-direction: initial;
         padding: 20rem 2.5rem;
     }
+    @mixin laptop {
+        padding: 20rem 2.5rem;
+        max-width: 1250px;
+    }
+    @mixin desktop-small {
+        max-width: 1400px;
+    }
 }
 .main-skills {
     width: 90%;
@@ -101,6 +135,9 @@
         margin-left: 5rem;
         padding: 5rem 7rem;
         margin-bottom: 0;
+    }
+    @mixin laptop {
+        padding: 3rem 3rem;
     }
 
     &__title h2{
