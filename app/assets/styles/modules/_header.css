@@ -7,9 +7,12 @@
 
 
     &__logo {
-
         @mixin tablet {
             margin-left: 7.5rem;
+        }
+        @mixin laptop-small {
+            width: 10%;
+            min-width: 200px;
         }
 
         img {
@@ -23,15 +26,39 @@
             }
         }
     }
+    &__nav {
+        display: none;
+
+        @mixin laptop-small {
+            width: 100%;
+            margin-right: 5rem;
+            display: flex;
+            justify-content: flex-end;
+            gap: 3rem;
+        }
+        a {
+            font-size: 2rem;
+            color: $mainText;
+            font-weight: 300;
+            transition: .3s;
+        }
+        a:hover {
+            color:$midBlue
+        }
+    }
     &__btn {
+
+        @mixin tablet {
+            margin-right: 7.5rem;
+        }
+        @mixin laptop-small {
+            width: 10%;
+            max-width: 200px;
+        }
         a {
             font-size: 1.9rem;
             font-weight: 300;
             display: block;
-        }
-
-        @mixin tablet {
-            margin-right: 7.5rem;
         }
     }
 }
@@ -44,47 +71,22 @@
     padding: 1rem 2rem;
     border-radius: 4rem;
     transition: 0.5s;
+    text-align: center;
 
     @mixin tablet {
-        padding: 1.7rem 5rem;
+        padding: 1.7rem 2rem;
         font-size: 1.5rem;
+        min-width: 160px;
     }
 }
 .cta-btn-hello:hover {
     background-position: right center;
     transform: translateY(5px);
 }
-
-
-
-
-
-
-
-.main-nav {
-    width: 60%;
-    display: flex;
-    justify-content: flex-end;
-    gap: 3rem;
-
-    a {
-        font-size: 2rem;
-        color: $mainText;
-        font-weight: 300;
-    }
-}
-
-
-.spacer {
-    min-height: 800px;
-}
-
-
 .animated-link {
     position: relative;
     width: fit-content;
 }
-
 .animated-link:after {
     content: "";
     background-color: $mainText;
@@ -95,7 +97,16 @@
     transition: 0.4s ease-out;
     position: absolute;
 }
-
 .animated-link:hover:after {
     width: 100%;
 }
+a.current-page {
+    color: $midBlue;
+}
+
+.spacer {
+    min-height: 400px;
+}
+
+
+
