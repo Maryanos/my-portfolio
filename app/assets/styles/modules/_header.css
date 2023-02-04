@@ -29,6 +29,7 @@
             }
         }
     }
+
     &__nav {
         display: none;
 
@@ -191,10 +192,6 @@
 }
 a.current-page {
     color: $midBlue;
-}
-
-.spacer {
-    min-height: 400px;
 }
 
 

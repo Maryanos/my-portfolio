@@ -1,0 +1,12 @@
+/* TEMP */
+.spacer {
+    min-height: 400px;
+}
+/* TEMP */
+
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+
+}

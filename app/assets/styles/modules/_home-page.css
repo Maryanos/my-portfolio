@@ -133,11 +133,11 @@
         margin-right: -4rem;
         width: 50%;
         margin-left: 5rem;
-        padding: 5rem 7rem;
+        padding: 4rem;
         margin-bottom: 0;
     }
     @mixin laptop {
-        padding: 3rem 3rem;
+        padding: 5rem 5rem;
     }
 
     &__title h2{
@@ -176,8 +176,11 @@
         min-width: 100px;
 
         @mixin laptop-small {
-            width: 25%;
+            width: 40%;
             font-size: 1.7rem;
+        }
+        @mixin laptop {
+            width: 28%;
         }
     }
     &__bar {
@@ -226,7 +229,7 @@
     animation: mysql-bar 1.25s normal forwards;/*width: 25%;*/
 }
 .progress-bar-fill7 {
-    animation: wpdev-bar 1.25s normal forwards;/*width: 25%;*/
+    animation: wpdev-bar 4.25s normal forwards;/*width: 25%;*/
 }
 @keyframes html-bar {
     0% {
@@ -539,19 +542,6 @@
     }
 }
 
-
-.main-nav {
-    width: 60%;
-    display: flex;
-    justify-content: flex-end;
-    gap: 3rem;
-
-    a {
-        font-size: 2rem;
-        color: $mainText;
-        font-weight: 300;
-    }
-}
 
 
 
