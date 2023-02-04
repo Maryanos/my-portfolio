@@ -200,7 +200,8 @@
 .progress-bar-fill3,
 .progress-bar-fill4,
 .progress-bar-fill5,
-.progress-bar-fill6 {
+.progress-bar-fill6,
+.progress-bar-fill7 {
     display: block;
     height: 5px;
     background-color: $red;
@@ -223,6 +224,9 @@
 }
 .progress-bar-fill6 {
     animation: mysql-bar 1.25s normal forwards;/*width: 25%;*/
+}
+.progress-bar-fill7 {
+    animation: wpdev-bar 1.25s normal forwards;/*width: 25%;*/
 }
 @keyframes html-bar {
     0% {
@@ -272,6 +276,14 @@
         width: 25%;
     }
 }
+@keyframes wpdev-bar {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 85%;
+    }
+}
 
 
 .other-skills {
@@ -310,7 +322,8 @@
         margin-top: 2rem;
         &__set1,
         &__set2,
-        &__set3 {
+        &__set3,
+        &__set4 {
             display: flex;
             justify-content: space-evenly;
             gap: 5%;
@@ -343,6 +356,34 @@
             }
             @mixin laptop {
                 max-height: 70px;
+            }
+        }
+        &__set4 img {
+            max-height: 50px;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+
+            @mixin mobile-mini {
+                max-height: 40px;
+            }
+            @mixin tablet {
+                max-height: 65px;
+            }
+            @mixin laptop {
+                max-height: 70px;
+            }
+        }
+        &__set4 img:first-child {
+            margin-left: 5rem;
+            margin-top: .5rem;
+
+            @mixin mobile-mini {
+                margin-left: 1.5rem;
+                margin-top: .5rem;
+            }
+            @mixin laptop-small {
+                margin-left: 8rem;
+                margin-top: 0rem;
             }
         }
         &__set1 img:first-child {
@@ -383,8 +424,17 @@
             margin-top: 7rem;
 
             @mixin laptop-small {
-                margin-left: 5rem;
+                margin-left: 8rem;
                 margin-top: 7rem;
+            }
+        }
+        &__set3 img:nth-child(2) {
+            margin-left: 2rem;
+            margin-top: 2rem;
+
+            @mixin laptop-small {
+                margin-left: 5rem;
+                margin-top: 4rem;
             }
         }
         &__set3 img:last-child {

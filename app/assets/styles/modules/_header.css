@@ -1,12 +1,15 @@
-.main-header {
+.site-header {
     padding: 5rem 2rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 
-
     &__logo {
+
+        @mixin mobile-mini {
+            min-width: 150px;
+        }
         @mixin tablet {
             margin-left: 7.5rem;
         }
@@ -16,7 +19,7 @@
         }
 
         img {
-            max-height: 60px;
+            max-height: 50px;
 
             @mixin mobile-mini {
                 max-height: 50px;
@@ -48,6 +51,9 @@
     }
     &__btn {
 
+        @mixin mobile-mini {
+            display: none;
+        }
         @mixin tablet {
             margin-right: 7.5rem;
         }
@@ -61,7 +67,90 @@
             display: block;
         }
     }
+
+    &__hamburger {
+        display: flex;
+        justify-content: center;
+        z-index: 10;
+
+        @mixin mobile-mini {
+            margin-right: 2.5rem;
+        }
+        @mixin laptop-small {
+            display: none;
+        }
+    }
+
+    &__menu-icon {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        right: 0;
+        cursor: pointer;
+        z-index: 2;
+        display: flex;
+        transition: all .3s ease-in-out;
+
+        &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 3px;
+        background-color: $mainText;
+        transform-origin: 0 0;
+        transition: transform .3s ease-out;
+        }
+
+        &__middle {
+        position: absolute;
+        top: 12px;
+        left: 0;
+        width: 30px;
+        height: 3px;
+        background-color: $mainText;
+        transition: all .3s ease-out;
+        transform-origin: 0 50%;
+        }
+
+        &::after {
+        content: "";
+        position: absolute;
+        top: 25px;
+        left: 0;
+        width: 30px;
+        height: 3px;
+        background-color: $mainText;
+        transform-origin: 0 100%;
+        transition: transform .3s ease-out;
+        }
+
+        &:hover > &__middle {
+        transform: translateX(5px);
+        }
+    }
+
+
+    &__menu-icon--close-x {
+
+        &::before {
+            transform: rotate(45deg) scaleX(1.24);
+        }
+        .site-header__menu-icon__middle {
+            opacity: 0;
+            transform: scaleX(0);
+        }
+        &::after {
+            transform: rotate(-45deg) scaleX(1.24) translateY(1px);
+        }
+    }
 }
+
+
+
+
+
 
 .cta-btn-hello {
     background-color: $cta;
@@ -107,6 +196,9 @@ a.current-page {
 .spacer {
     min-height: 400px;
 }
+
+
+
 
 
 
