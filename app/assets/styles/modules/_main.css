@@ -161,7 +161,7 @@
         padding-bottom: 3rem;
 
         @mixin mobile-mini {
-            font-size: 1.7rem;
+            font-size: 1.7;
         }
     }
 }
@@ -488,6 +488,21 @@
         }
     }
 }
+
+
+.main-nav {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 3rem;
+
+    a {
+        font-size: 2rem;
+        color: $mainText;
+        font-weight: 300;
+    }
+}
+
 
 
 
