@@ -161,7 +161,7 @@
         padding-bottom: 3rem;
 
         @mixin mobile-mini {
-            font-size: 1.7rem;
+            font-size: 1.7;
         }
     }
 }
@@ -488,6 +488,10 @@
         }
     }
 }
+
+
+
+
 
 
 

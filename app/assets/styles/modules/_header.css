@@ -55,3 +55,47 @@
     transform: translateY(5px);
 }
 
+
+
+
+
+
+
+.main-nav {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 3rem;
+
+    a {
+        font-size: 2rem;
+        color: $mainText;
+        font-weight: 300;
+    }
+}
+
+
+.spacer {
+    min-height: 800px;
+}
+
+
+.animated-link {
+    position: relative;
+    width: fit-content;
+}
+
+.animated-link:after {
+    content: "";
+    background-color: $mainText;
+    height: 1px;
+    width: 0;
+    left: 0px;
+    top: -5px;
+    transition: 0.4s ease-out;
+    position: absolute;
+}
+
+.animated-link:hover:after {
+    width: 100%;
+}
