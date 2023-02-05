@@ -9,6 +9,11 @@
 @import "base/_utility-classes";
 
 
+/* Pages */
+@import "modules/_home-page";
+@import "modules/_portfolio-page";
+
+
 /* Modules */
 
 @import "modules/_header";
@@ -16,9 +21,7 @@
 @import "modules/_footer";
 
 
-/* Pages */
-@import "modules/_home-page";
-@import "modules/_portfolio-page";
+
 
 
 

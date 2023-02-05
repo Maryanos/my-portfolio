@@ -1,12 +1,4 @@
-/* TEMP */
-.spacer {
-    min-height: 400px;
+.temp {
+    color: white;
 }
-/* TEMP */
 
-
-.portfolio {
-    display: flex;
-    flex-wrap: wrap;
-
-}
