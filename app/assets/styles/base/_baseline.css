@@ -15,7 +15,7 @@ body {
     width: 100%!important;
     font-size: 1.7rem;
     background-image:url("./assets/images/sea2.jpg");
-    background-size: cover;
+    background-size:cover;
     position: relative;
     overflow-x: hidden!important;
 }
@@ -96,6 +96,5 @@ a {
 	background-color: $scrollBar;
 	border-radius: 20px;
 }
-
 
 
