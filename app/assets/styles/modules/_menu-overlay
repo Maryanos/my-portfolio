@@ -1,0 +1,82 @@
+.hamburger {
+    color: white;
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+    font-size: 3rem;
+    z-index: 5;
+}
+.menu-overlay {
+    content: "";
+    position: fixed;
+    margin-left: -3px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(14, 34, 63, 0.98);
+    z-index: 5;
+    transition: .5s ease-in-out;
+    border-right: solid 3px #dacaf5;
+    border-radius: 0 50px 25px 0;
+    width: 0;
+
+    &--active {
+        width:80%;
+
+        @mixin tablet {
+            width: 50%;
+        }
+    }
+    &--active .overlay-content {
+        width: 100%;
+        visibility: visible;
+        opacity: 1;
+    }
+    &--active .overlay-content {
+        width: 100%;
+        visibility: visible;
+        opacity: 1;
+        padding: 5rem;
+    }
+}
+
+.bg-fade{
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    transition: all .3s ease-in-out;
+    z-index: -1;
+
+    &--active {
+        opacity: .9;
+        background-color: $siteBg;
+        z-index: 4;
+    }
+}
+
+.overlay-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    overflow-y: auto;
+    height: 90%;
+    width: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s ease-in-out;
+    z-index: 999;
+    position: relative;
+}
+.overlay-content::-webkit-scrollbar {
+    width: 0;
+}
+
+.overlay-icon {
+    display: flex;
+    justify-content: flex-end;
+    
+}

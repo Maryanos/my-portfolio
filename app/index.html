@@ -13,24 +13,31 @@
     </head>
     <body>
         <div class="content-wrapper">
-            <header class="site-header">
-                <div class="site-header__logo">
-                    <a href="index.html">
-                        <img src="./assets/images/logo.png" data-aos="fade-down" alt="Mariusz Raszewski Logo with red and bold letter M">
-                    </a>
-                </div>
-                <div class="site-header__hamburger">
-                    <div class="site-header__menu-icon">
-                        <div class="site-header__menu-icon__middle"></div>
+            <header>
+                <div class="sticky-header">
+                    <div class="sticky-header__hamburger ">
+                        <div class="menu-icon overlay-trigger sticky-header-icon">
+                            <div class="menu-icon__middle"></div>
+                        </div>
+                    </div>
+                    <div class="sticky-header__btn">
+                        <a class="cta-btn-hello" href="mailto:studio@webcraff.com">Say Hallo</a>
                     </div>
                 </div>
-                <nav class="site-header__nav">
-                    <a href="index.html" class="animated-link current-page">Home</a>
-                    <a href="portfolio.html" class="animated-link line-anim-trigger">Portfolio</a>
-                    <a href="#contact" class="animated-link">Contact</a>
-                </nav>
-                <div class="site-header__btn"  data-aos="fade-down">
-                    <a class="cta-btn-hello" href="mailto:studio@webcraff.com">Say Hallo</a>
+                <div class="site-header" id="header">
+                    <div class="site-header__logo">
+                        <a href="index.html">
+                            <img src="./assets/images/logo.png" data-aos="fade-down" alt="Mariusz Raszewski Logo with red and bold letter M">
+                        </a>
+                    </div>
+                    <div class="site-header__hamburger" data-aos="fade-down">
+                        <div class="menu-icon overlay-trigger main-header-icon">
+                            <div class="menu-icon__middle"></div>
+                        </div>
+                    </div>
+                    <div class="site-header__btn"  data-aos="fade-down">
+                        <a class="cta-btn-hello" href="mailto:studio@webcraff.com">Say Hallo</a>
+                    </div>
                 </div>
             </header>
             <div class="hero">
@@ -160,13 +167,6 @@
                 </div>
             </div>
             <footer>
-                <div id="menuOverlay" class="menu-overlay">
-                    <div class="overlay-content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis adipisci minima consequuntur explicabo assumenda enim fuga! Eveniet, quia saepe. Explicabo commodi dicta delectus laboriosam ducimus modi ipsam alias quia. Quae.</p>
-                    </div>
-                </div>
-                <div><a id="hamburger" class="hamburger">X</a></div>
-
                 <div class="back-to-top" data-aos="zoom-in">
                     <a href="#"><i class="fa-light fa-arrow-up-from-bracket"></i></a>
                 </div>
@@ -193,6 +193,22 @@
             <script>
                 AOS.init({duration: 1400});
             </script>
+        </div>
+        <div class="bg-fade"></div>
+        <div class="menu-overlay">
+            <div class="overlay-content">
+                <a href="index.html" class="animated-link current-page">Home</a>
+                <a href="portfolio.html" class="animated-link line-anim-trigger">Portfolio</a>
+                <a href="#contact" class="animated-link">Contact</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt at deserunt, dolores quaerat molestias cumque dolore sequi consequatur nulla maiores ipsam quae eius eum accusantium eligendi. Maiores tempore iusto porro.
+                Enim repellendus inventore labore dolorum alias dolor aspernatur sunt. Ipsa numquam autem saepe quidem facilis. Quam minima sequi rerum natus esse, expedita iure magnam, voluptatem iusto officia excepturi qui optio!
+                Ipsum ea quo voluptas eius magni adipisci vitae distinctio quaerat. Quisquam ab eum nemo, fugit laboriosam rem qui in facilis, nesciunt nobis et ipsum perferendis voluptate voluptas error, cum quaerat.</p>
+                <div class="overlay-icon">
+                    <div class="overlay-trigger menu-overlay-icon">
+                        <span>Close</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>

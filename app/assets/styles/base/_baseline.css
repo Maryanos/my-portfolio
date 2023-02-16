@@ -18,6 +18,7 @@ body {
     background-size:cover;
     position: relative;
     overflow-x: hidden!important;
+
 }
 body.noscroll {
     overflow: auto!important;
