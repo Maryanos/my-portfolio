@@ -13,31 +13,36 @@
     </head>
     <body>
         <div class="content-wrapper">
-            <header class="site-header">
-                <div class="site-header__logo">
-                    <a href="index.html">
-                        <img src="./assets/images/logo.png" data-aos="fade-down" alt="Mariusz Raszewski Logo with red and bold letter M">
-                    </a>
-                </div>
-                <div id="hamburger" class="site-header__hamburger">
-                    <div class="site-header__menu-icon">
-                        <div class="site-header__menu-icon__middle"></div>
+            <header>
+                <div class="sticky-header">
+                    <div class="sticky-header__hamburger ">
+                        <div class="menu-icon overlay-trigger sticky-x">
+                            <div class="menu-icon__middle"></div>
+                        </div>
+                    </div>
+                    <div class="sticky-header__btn">
+                        <a class="cta-btn-hello" href="mailto:studio@webcraff.com">Say Hallo</a>
                     </div>
                 </div>
-                <nav class="site-header__nav">
-                    <a href="index.html" class="animated-link current-page">Home</a>
-                    <a href="portfolio.html" class="animated-link line-anim-trigger">Portfolio</a>
-                    <a href="#contact" class="animated-link">Contact</a>
-                </nav>
-                <div class="site-header__btn"  data-aos="fade-down">
-                    <a class="cta-btn-hello" href="mailto:studio@webcraff.com">Say Hallo</a>
+                <div class="site-header" id="header">
+                    <div class="site-header__logo">
+                        <a href="/">
+                            <img src="./assets/images/logo.png" data-aos="fade-down" alt="Mariusz Raszewski Logo with red and bold letter M">
+                        </a>
+                    </div>
+                    <div class="site-header__hamburger" data-aos="fade-down">
+                        <div class="menu-icon overlay-trigger main-x">
+                            <div class="menu-icon__middle"></div>
+                        </div>
+                    </div>
+                    <div class="site-header__btn"  data-aos="fade-down">
+                        <a class="cta-btn-hello" href="mailto:studio@webcraff.com">Say Hallo</a>
+                    </div>
                 </div>
             </header>
+
             <div class="spacer"></div>
-            <div class="temp-block center-v">
-                <h3>PORTFOLIO PAGE<br>content will live here</h3>
-            </div>
-            <div class="spacer"></div>
+
             <div class="ctf center-v" id="contact">
                 <div class="ctf__content center-v">
                     <h2 data-aos="fade-in" data-aos-delay="100">Get In Touch!</h2>
@@ -53,13 +58,6 @@
                 </div>
             </div>
             <footer>
-                <div class="menu-overlay">
-                    <div class="overlay-content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis adipisci minima consequuntur explicabo assumenda enim fuga! Eveniet, quia saepe. Explicabo commodi dicta delectus laboriosam ducimus modi ipsam alias quia. Quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aspernatur explicabo iusto ducimus exercitationem quos suscipit veniam, error similique! Sapiente accusamus deleniti odit fuga quidem maxime similique impedit eius quis?
-                        Tempore, illo earum! Tenetur a architecto tempore hic, illum impedit facere est corporis eos quisquam saepe vel sit. Similique quos itaque libero eum facilis doloremque praesentium, nulla natus distinctio mollitia!
-                        Repudiandae totam in perferendis perspiciatis quae unde, dolore sequi voluptas delectus consequatur neque, dignissimos natus ut eum, magnam corrupti aliquam placeat a repellendus velit. Architecto, commodi! Consequuntur, perspiciatis cumque! Rem?</p>
-                    </div>
-                </div>
                 <div class="back-to-top" data-aos="zoom-in">
                     <a href="#"><i class="fa-light fa-arrow-up-from-bracket"></i></a>
                 </div>
@@ -86,6 +84,35 @@
             <script>
                 AOS.init({duration: 1400});
             </script>
+        </div>
+        <div class="bg-fade"></div>
+        <div class="menu-overlay">
+            <div class="overlay-logo">
+                <img src="./assets/images/logo.png" data-aos="fade-down" alt="Mariusz Raszewski Logo with red and bold letter M">
+            </div>
+            <div class="overlay-content">
+                <nav class="overlay-content__nav anim-underline">
+                    <a href="/" class="link-home">Home</a>
+                    <a href="portfolio.html" class="link-active">Portfolio</a>
+                    <a href="#contact" class="link-contact">Contact</a>
+                    <a href="mailto:studio@webcraff.com" class="link-email" target="_blank">studio@webcraff.com</a>
+                </nav>
+            </div>
+            <div class="overlay-icons-wrapper">
+                <div class="overlay-social-icons" data-aos="fade-up">
+                    <a href="https://github.com/Maryanos" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/webcraff" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/webcraff/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/mariusz-raszewski/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://webcraff.com/"><i class="fa-light fa-globe" target="_blank"></i></a>
+                    <a href="mailto:studio@webcraff.com" target="_blank"><i class="fa-light fa-envelope"></i></a>
+                    <a href="https://m.me/webcraff" target="_blank"><i class="fa-brands fa-facebook-messenger"></i></a>
+                    <div class="left-line"></div>
+                </div>
+            </div>
+            <div class="close-btn">
+                <div class="overlay-trigger menu-overlay-icon"><i class="fa-light fa-arrow-right-from-bracket"></i></div>
+            </div>
         </div>
     </body>
 </html>

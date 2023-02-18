@@ -2,6 +2,12 @@
 .spacer {
     min-height: 350px;
 }
+.relative {
+    position: relative;
+}
+.hide {
+    display: none;
+}
 .temp-block {
     padding: 10rem;
     display: flex;
@@ -50,6 +56,20 @@
     object-position: bottom;
 }
 
-.relative {
-    position: relative;
+.anim-underline a:after{
+    content: "";
+    background-color: $midBlue;
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: 10px;
+    transition: 0.5s ease-out;
+    position: absolute;
+}
+.anim-underline a:hover:after {
+    width: 100%;
+}
+
+.link-active {
+    color: $midBlue;
 }

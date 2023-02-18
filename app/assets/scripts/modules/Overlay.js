@@ -2,12 +2,18 @@ document.querySelectorAll(".overlay-trigger").forEach((e) => {
 
     e.addEventListener("click", function() {
         let menuOverlay = document.querySelector(".menu-overlay")
-        let overlayActive = menuOverlay.classList.contains("menu-overlay--active")
+        let overlayIsActive = menuOverlay.classList.contains("menu-overlay--active")
         let bgFade = document.querySelector(".bg-fade")
-        let stickyHeaderIcon = document.querySelector(".sticky-header-icon")
-        let mainHeaderIcon = document.querySelector(".main-header-icon")
+        let stickyHeaderIcon = document.querySelector(".sticky-x")
+        let mainHeaderIcon = document.querySelector(".main-x")
+        let contactBtn = document.querySelector(".link-contact")
+        let homeBtn = document.querySelector(".link-home")
+        let stickyHeader = document.querySelector(".sticky-header")
+        let helloBtn = document.querySelector(".site-header__btn")
+        let siteHeaderXbtn = document.querySelector(".site-header__hamburger")
+        let logo = document.querySelector(".site-header__logo")
 
-        if (overlayActive) {
+        if (overlayIsActive) {
             closeOverlay()
         }
         else {
@@ -17,8 +23,8 @@ document.querySelectorAll(".overlay-trigger").forEach((e) => {
         function openOverlay() {
             menuOverlay.classList.add("menu-overlay--active")
             bgFade.classList.add("bg-fade--active")
-            stickyHeaderIcon.classList.add("menu-icon--close-x")
-            mainHeaderIcon.classList.add("menu-icon--close-x")
+            stickyHeaderIcon.classList.add("icon-x--active")
+            mainHeaderIcon.classList.add("icon-x--active")
             bgFade.addEventListener("click", function() {
                 closeOverlay()
             })
@@ -26,18 +32,39 @@ document.querySelectorAll(".overlay-trigger").forEach((e) => {
                 if(e.key === "Escape")
                 closeOverlay()
             })
+            contactBtn.addEventListener("click", closeOverlay)
+            homeBtn.addEventListener("click", closeOverlay)
+
+            if (screen.width < 1024) {
+                document.documentElement.style.overflowY = "hidden"
+                stickyHeader.classList.add("sticky-header--active")
+                helloBtn.style.opacity = "0"
+                siteHeaderXbtn.style.opacity = "0"
+            }
+            if (screen.width < 768) {
+                stickyHeader.style.left = "calc((95% - 285px)/2)"
+            }
         }
 
         function closeOverlay () {
             menuOverlay.classList.remove("menu-overlay--active")
             bgFade.classList.remove("bg-fade--active")
-            stickyHeaderIcon.classList.remove("menu-icon--close-x")
-            mainHeaderIcon.classList.remove("menu-icon--close-x")
-            overlayIcon.classList.remove("menu-icon--close-x")
+            stickyHeaderIcon.classList.remove("icon-x--active")
+            mainHeaderIcon.classList.remove("icon-x--active")
+            if (screen.width < 1024) {
+                document.documentElement.style.overflowY = "auto"
+                helloBtn.style.opacity = "1"
+                siteHeaderXbtn.style.opacity = "1"
+                if (window.scrollY < 80) {
+                    stickyHeader.classList.remove("sticky-header--active")
+                }
+            }
+            if (screen.width < 768) {
+                stickyHeader.style.left = "calc((100% - 285px)/2)"
+            }
         }
     })
 })
-
 
 
 

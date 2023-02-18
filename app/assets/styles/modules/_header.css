@@ -3,9 +3,14 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 5rem;
     transition: 3.s ease-in-out;
 
+    @mixin laptop-small {
+        justify-content: space-between;
+        gap: unset;
+    }
 
     &__logo {
 
@@ -21,7 +26,7 @@
         }
 
         img {
-            max-height: 50px;
+            max-height: 100px;
 
             @mixin mobile-mini {
                 max-height: 50px;
@@ -33,19 +38,18 @@
     }
 
     &__btn {
-        order: 1;
-        z-index: 6;
+        display: none;
 
-        @mixin mobile-mini {
-            display: none;
-        }
         @mixin tablet {
-            margin-right: 7.5rem;
+            display: flex;
+            margin-right: 4rem;
             order: 2;
+            z-index: 3;
         }
         @mixin laptop-small {
-            width: 10%;
+
             max-width: 200px;
+            margin-right: 7.5rem;
         }
         a {
             font-size: 1.9rem;
@@ -56,17 +60,20 @@
 
     &__hamburger {
         display: flex;
-        justify-content: flex-end;
-        margin-right: 5rem;
-        z-index: 6;
-        order: 2;
 
-        @mixin mobile-mini {
-            margin-right: 2.5rem;
-        }
+
+        order: 2;
+        margin-right: 3rem;
+
         @mixin tablet {
+            justify-content: flex-end;
             width: 100%;
             order: 1;
+            margin-right: 3rem;
+            z-index: 3;
+        }
+        @mixin laptop-small {
+            margin-right: 5rem;
         }
     }
 }
@@ -75,7 +82,6 @@
     height: 30px;
     position: relative;
     cursor: pointer;
-    z-index: 2;
     display: flex;
     transition: all .3s ease-in-out;
 
@@ -83,7 +89,7 @@
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    left: 2px;
     width: 30px;
     height: 3px;
     background-color: $mainText;
@@ -93,8 +99,8 @@
 
     &__middle {
     position: absolute;
-    top: 12px;
-    left: 0;
+    top: 13px;
+    left: 2px;
     width: 30px;
     height: 3px;
     background-color: $mainText;
@@ -105,8 +111,8 @@
     &::after {
     content: "";
     position: absolute;
-    top: 25px;
-    left: 0;
+    bottom: 0;
+    left: 2px;
     width: 30px;
     height: 3px;
     background-color: $mainText;
@@ -115,22 +121,22 @@
     }
 
     &:hover > &__middle {
-    transform: translateX(5px);
+    transform: translateX(-5px);
     }
 }
 
 
-.menu-icon--close-x {
+.icon-x--active{
 
     &::before {
-        transform: rotate(45deg) scaleX(1.24);
+        transform: rotate(45deg) scaleX(1.30);
     }
     .menu-icon__middle {
         opacity: 0;
         transform: scaleX(0);
     }
     &::after {
-        transform: rotate(-45deg) scaleX(1.24) translateY(1px);
+        transform: rotate(-45deg) scaleX(1.30);
     }
 }
 
@@ -159,28 +165,50 @@
 .sticky-header {
     position: fixed;
     top: -100px;
-    right: 5rem;
-    min-width: 350px;
+    left: calc((95% - 285px)/2);
+    right: auto;
+    min-width: 280px;
     //background-color: rgba(20, 46, 72, 0.98);
     background-color: rgba(109, 74, 249, 0.965);
     display: flex;
     justify-content: space-between;
-    padding: 3rem 5rem;
+    align-items: center;
+    padding: 2rem 4.5rem;
     border-radius: 45px;
-    transition: all .5s;
-    z-index: 5;
+    transition: all .3s;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.359);
+    z-index: 4;
+
+    @mixin tablet {
+        left: calc((75% - 285px)/2);
+        right: auto;
+    }
+    @mixin laptop-small {
+        left: auto;
+        right: 4rem;
+        min-width: 280px;
+        padding: 2rem 4rem
+
+    }
+    @mixin desktop-small {
+        left: auto;
+        right: 7rem;
+        min-width: 350px;
+        padding: 3rem 5rem;
+    }
 
     .cta-btn-hello {
 
-        @mixin tablet {
-            padding: 1.7rem 3rem;
+        @mixin laptop-small {
+            padding: 1.4rem 2rem;
             min-width: 160px;
             font-size: 1.8rem;
         }
+        @mixin desktop-small {
+            padding: 2rem 4rem;
+        }
     }
-
     &--active {
-        top: 10px;
+        top: 20px;
     }
 }

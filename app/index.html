@@ -16,7 +16,7 @@
             <header>
                 <div class="sticky-header">
                     <div class="sticky-header__hamburger ">
-                        <div class="menu-icon overlay-trigger sticky-header-icon">
+                        <div class="menu-icon overlay-trigger sticky-x">
                             <div class="menu-icon__middle"></div>
                         </div>
                     </div>
@@ -26,12 +26,12 @@
                 </div>
                 <div class="site-header" id="header">
                     <div class="site-header__logo">
-                        <a href="index.html">
+                        <a href="/">
                             <img src="./assets/images/logo.png" data-aos="fade-down" alt="Mariusz Raszewski Logo with red and bold letter M">
                         </a>
                     </div>
                     <div class="site-header__hamburger" data-aos="fade-down">
-                        <div class="menu-icon overlay-trigger main-header-icon">
+                        <div class="menu-icon overlay-trigger main-x">
                             <div class="menu-icon__middle"></div>
                         </div>
                     </div>
@@ -48,7 +48,7 @@
                 <div class="hero__box2">
                     <p data-aos="fade-in" data-aos-delay="100">Hi, my name is Marius.</p>
                     <h1 data-aos="fade-in" data-aos-delay="300">I'm a web developer and<br>software engineering enthusiast...</h1>
-                    <p data-aos="fade-in" data-aos-delay="500">I'm building things for the web doing exactly what I love! I like getting my hands dirty in the code and solve problems especially when they are initially impossible to solve. 🤔<br>I'm currently diving even deeper undertaking software engineering bootcamp at Skills City and I'm looking forward for a new career opportunity. </p>
+                    <p data-aos="fade-in" data-aos-delay="500">I'm building things for the web doing exactly what I love! I like getting my hands dirty in the code and solve problems especially when they are initially impossible to solve.<br>I'm currently diving even deeper undertaking software engineering bootcamp at Skills City and I'm looking forward for a new career opportunity. </p>
                 </div>
             </div>
             <div class="skills-wrapper">
@@ -196,18 +196,31 @@
         </div>
         <div class="bg-fade"></div>
         <div class="menu-overlay">
+            <div class="overlay-logo">
+                <img src="./assets/images/logo.png" data-aos="fade-down" alt="Mariusz Raszewski Logo with red and bold letter M">
+            </div>
             <div class="overlay-content">
-                <a href="index.html" class="animated-link current-page">Home</a>
-                <a href="portfolio.html" class="animated-link line-anim-trigger">Portfolio</a>
-                <a href="#contact" class="animated-link">Contact</a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt at deserunt, dolores quaerat molestias cumque dolore sequi consequatur nulla maiores ipsam quae eius eum accusantium eligendi. Maiores tempore iusto porro.
-                Enim repellendus inventore labore dolorum alias dolor aspernatur sunt. Ipsa numquam autem saepe quidem facilis. Quam minima sequi rerum natus esse, expedita iure magnam, voluptatem iusto officia excepturi qui optio!
-                Ipsum ea quo voluptas eius magni adipisci vitae distinctio quaerat. Quisquam ab eum nemo, fugit laboriosam rem qui in facilis, nesciunt nobis et ipsum perferendis voluptate voluptas error, cum quaerat.</p>
-                <div class="overlay-icon">
-                    <div class="overlay-trigger menu-overlay-icon">
-                        <span>Close</span>
-                    </div>
+                <nav class="overlay-content__nav anim-underline">
+                    <a href="#" class="link-home link-active">Home</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="#contact" class="link-contact">Contact</a>
+                    <a href="mailto:studio@webcraff.com"  class="link-email" target="_blank">studio@webcraff.com</a>
+                </nav>
+            </div>
+            <div class="overlay-icons-wrapper">
+                <div class="overlay-social-icons" data-aos="fade-up">
+                    <a href="https://github.com/Maryanos" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/webcraff" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/webcraff/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/mariusz-raszewski/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://webcraff.com/"><i class="fa-light fa-globe" target="_blank"></i></a>
+                    <a href="mailto:studio@webcraff.com" target="_blank"><i class="fa-light fa-envelope"></i></a>
+                    <a href="https://m.me/webcraff" target="_blank"><i class="fa-brands fa-facebook-messenger"></i></a>
+                    <div class="left-line"></div>
                 </div>
+            </div>
+            <div class="close-btn">
+                <div class="overlay-trigger menu-overlay-icon"><i class="fa-light fa-arrow-right-from-bracket"></i></div>
             </div>
         </div>
     </body>
