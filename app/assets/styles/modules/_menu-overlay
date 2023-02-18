@@ -110,23 +110,29 @@
         margin-right: auto;
 
         a {
-            font-size: 2.5rem;
+            font-size: 3rem;
             line-height: 2;
             position: relative;
             width: fit-content;
             transition: .3s ease-in-out;
+            font-weight: 500;
+            letter-spacing: 3px;
 
             @mixin tablet {
                 font-size: 4rem;
+                font-weight: 600;
+                letter-spacing: 5px;
             }
         }
         a:hover {
-            color: $midBlue;
+            color: $midBlue!important;
         }
-    }
-    .link-email {
-        margin-top: 5rem;
-        font-size: 2rem;
+        a:last-child {
+            font-weight: 400;
+            margin-top: 5rem;
+            font-size: 2rem;
+            letter-spacing: 3px;
+        }
     }
 }
 
