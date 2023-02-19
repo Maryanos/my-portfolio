@@ -18,7 +18,7 @@
 .menu-overlay {
     content: "";
     position: fixed;
-    height: 100vh;
+    height: 100%;
     top: 0;
     left: 0;
     width: 0%;
@@ -106,6 +106,12 @@
         margin-top: 5rem;
     }
     @mixin laptop-small {
+        margin-top: 0rem;
+    }
+    @mixin desktop {
+        margin-top: 5rem
+    }
+    @mixin desktop-large {
         margin-top: 10rem;
     }
 
@@ -234,13 +240,15 @@
 }
 
 .close-btn {
-    position: absolute;
-    bottom: 3.5rem;
-    right: 3.5rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5rem;
+    padding: 10rem 0 5rem;
 
     @mixin tablet {
-        bottom: 8rem;
-        right: 8rem;
+        position: absolute;
+        bottom: 3rem;
+        right: 1rem;
     }
     i {
         font-size: 3rem;
