@@ -19,7 +19,6 @@ window.onscroll = function() {
     } else {
         contactBtn.style.color = "#c2e0ff"
     }
-
 }
 
 

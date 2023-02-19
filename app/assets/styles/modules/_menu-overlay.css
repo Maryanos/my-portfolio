@@ -57,7 +57,11 @@
         width: 100%;
         visibility: visible;
         opacity: 1;
-        padding: 5rem;
+        padding: 5rem 2.5rem;
+
+        @mixin tablet {
+            padding: 5rem;
+        }
     }
     &--active .overlay-logo {
         opacity: 1;
@@ -76,13 +80,13 @@
     opacity: 0;
     transition: .2s ease-in-out;
 
-    @mixin tablet {
+    @mixin laptop-small {
         padding: 5rem 5rem 5rem 10rem;
         justify-content: flex-start;
         margin-top: 0;
     }
     img {
-        max-height: 60px;
+        max-height: 100px;
     }
 }
 .overlay-content {
@@ -99,6 +103,9 @@
     overflow-x: hidden;
 
     @mixin tablet {
+        margin-top: 5rem;
+    }
+    @mixin laptop-small {
         margin-top: 10rem;
     }
 
@@ -130,8 +137,17 @@
         a:last-child {
             font-weight: 400;
             margin-top: 5rem;
-            font-size: 2rem;
+            font-size: 1.8rem;
             letter-spacing: 3px;
+
+            @mixin mobile-tiny {
+                font-size: 1.5rem;
+                letter-spacing: normal;
+            }
+            @mixin tablet {
+                font-size: 2.5rem;
+            }
+
         }
     }
 }
