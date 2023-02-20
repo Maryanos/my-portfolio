@@ -19,14 +19,14 @@
     &__logo {
 
         @mixin tablet {
-            margin-left: 7.5rem;
+            margin-left: 3rem;
         }
         @mixin laptop-small {
             width: 10%;
             min-width: 200px;
         }
 
-        img {
+        svg {
             max-height: 90px;
 
             @mixin mobile-mini {
@@ -78,6 +78,10 @@
         }
     }
 }
+
+
+
+
 .menu-icon {
     width: 30px;
     height: 30px;

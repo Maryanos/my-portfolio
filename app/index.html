@@ -26,9 +26,7 @@
                 </div>
                 <div class="site-header" id="header">
                     <div class="site-header__logo">
-                        <a href="#">
-                            <img src="./assets/images/logo.png" data-aos="fade-down" alt="MR logo">
-                        </a>
+                        <svg id="mr-logo" class="logo mr-logo" width="200px" height="200px" viewBox="0 0 671 631"></svg>
                     </div>
                     <div class="site-header__hamburger" data-aos="fade-down">
                         <div class="menu-icon overlay-trigger main-x">
@@ -153,67 +151,14 @@
                     <img src="./assets/images/crane.png" data-aos="fade-left" alt="">
                 </div>
             </div>
-            <div class="ctf center-v" id="contact">
-                <div class="ctf__content center-v">
-                    <h2 data-aos="fade-in" data-aos-delay="100">Get In Touch!</h2>
-                    <p data-aos="fade-in" data-aos-delay="200">I'm always open for any new opportunities, and my inbox is also always open :)<br>If you have any question or just want to say hello, I will always get back to you!</p>
-                </div>
-                <div class="ctf__form" data-aos="flip-up">
-                    <input class="ctf__form__name" type="text" name="firstName" id="first-name" placeholder="Your Name">
-                    <input class="ctf__form__email" type="email" name="email" id="email" placeholder="Your Email">
-                    <textarea class="ctf__form__msg" name="message" id="message" rows="10" placeholder="Your Message"></textarea>
-                    <div class="send-btn-wrapper" data-aos="fade-up">
-                        <a class="cta-btn-send" href="#">Send<i class="fa-regular fa-paper-plane"></i></a>
-                    </div>
-                </div>
-            </div>
-            <footer>
-                <div class="back-to-top" data-aos="zoom-in">
-                    <a href="#"><i class="fa-light fa-arrow-up-from-bracket"></i></a>
-                </div>
-                <div class="icons-wrapper">
-                    <div class="contact-icons" data-aos="fade-up">
-                        <a href="mailto:studio@webcraff.com" target="_blank"><i class="fa-light fa-envelope"></i></a>
-                        <a href="https://m.me/webcraff" target="_blank"><i class="fa-brands fa-facebook-messenger"></i></a>
-                        <div class="right-line"></div>
-                    </div>
-                    <div class="social-icons" data-aos="fade-up">
-                        <a href="https://github.com/Maryanos" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.facebook.com/webcraff" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/webcraff/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/mariusz-raszewski/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://webcraff.com/"><i class="fa-light fa-globe" target="_blank"></i></a>
-                        <div class="left-line"></div>
-                    </div>
-                </div>
-                <div class="copyrights center-v">
-                    <!-- <p data-aos="fade-in">Clean code always looks like it was written by someone who cares</p> -->
-                    <p>Handcrafted by me © 2023 all rights reserved.</p>
-                </div>
-            </footer>
+            <div class="contact-form ctf center-v" id="contact"></div>
+            <footer class="site-footer"></footer>
         </div>
         <div class="bg-fade"></div>
         <div class="menu-overlay">
-            <svg id="mr-logo" class="mr-logo" width="250px" height="250px" viewBox="0 0 671 631">
-                <defs>
-                    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
-                        <feOffset dx="20" dy="20"/>
-                        <feGaussianBlur result="blur" stdDeviation="10"/>
-                        <feFlood flood-color="#050107" flood-opacity=".4"/>
-                        <feComposite in2="blur" operator="in"/>
-                        <feComposite in="SourceGraphic"/>
-                    </filter>
-                    <filter id="drop-shadow-2" filterUnits="userSpaceOnUse">
-                        <feOffset dx="20" dy="20"/>
-                        <feGaussianBlur result="blur-2" stdDeviation="10"/>
-                        <feFlood flood-color="#050107" flood-opacity=".4"/>
-                        <feComposite in2="blur-2" operator="in"/>
-                        <feComposite in="SourceGraphic"/>
-                    </filter>
-                </defs>
-                <polyline id="mr-triangle" class="mr-triangle" points="10 581 10 10.33 295.5 295.83"/>
-                <polygon id="r-letter" class="r-letter" points="52.33 580 113.5 580 580 112 580 519 394.43 333.45 364.5 363.38 364.56 363.44 149 580 209.5 580 395.48 394.52 580 580 620.33 580 620.33 12 52.33 580"/>
-            </svg>
+            <div class="overlay-logo">
+                <svg id="mr-logo" class="logo mr-logo" width="200px" height="200px" viewBox="0 0 671 631"></svg>
+            </div>
             <div class="overlay-content">
                 <nav class="overlay-content__nav">
                     <a href="#" class="link-portfolio link-home link-active anim-underline">Home</a>
