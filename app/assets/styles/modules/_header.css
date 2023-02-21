@@ -19,7 +19,7 @@
     &__logo {
 
         @mixin tablet {
-            margin-left: 3rem;
+            margin-left: 6rem;
         }
         @mixin laptop-small {
             width: 10%;

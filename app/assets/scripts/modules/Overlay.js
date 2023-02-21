@@ -7,8 +7,8 @@ document.querySelectorAll(".overlay-trigger").forEach((e) => {
         let stickyHeaderIcon = document.querySelector(".sticky-x")
         let mainHeaderIcon = document.querySelector(".main-x")
         let contactBtn = document.querySelector(".link-contact")
-        let portfolioBtn = document.querySelector(".link-portfolio")
-        let homeBtn = document.querySelector(".link-home")
+        let portfolioBtn = document.querySelector(".link-active")
+        let homeBtn = document.querySelector(".link-active")
         let stickyHeader = document.querySelector(".sticky-header")
         let helloBtn = document.querySelector(".site-header__btn")
         let siteHeaderXbtn = document.querySelector(".site-header__hamburger")
@@ -37,7 +37,7 @@ document.querySelectorAll(".overlay-trigger").forEach((e) => {
             portfolioBtn.addEventListener("click", closeOverlay)
 
             if (screen.width < 1024) {
-                document.documentElement.style.overflow = "hidden"
+                //document.documentElement.style.overflow = "hidden"
                 document.body.style.height = "100%"
                 document.documentElement.style.height = "100%"
                 stickyHeader.classList.add("sticky-header--active")
@@ -55,7 +55,7 @@ document.querySelectorAll(".overlay-trigger").forEach((e) => {
             stickyHeaderIcon.classList.remove("icon-x--active")
             mainHeaderIcon.classList.remove("icon-x--active")
             if (screen.width < 1024) {
-                document.documentElement.style.overflow = "auto"
+                //document.documentElement.style.overflow = "auto"
                 document.body.style.height = "unset"
                 document.documentElement.style.height = "unset"
                 helloBtn.style.opacity = "1"
