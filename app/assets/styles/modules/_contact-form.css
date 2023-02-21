@@ -1,8 +1,7 @@
 .ctf {
     padding: 5rem 2.5rem 10rem;
     max-width: 750px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 
     &__content {
         width: 100%;

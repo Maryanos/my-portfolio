@@ -1,8 +1,7 @@
 .back-to-top {
     display: flex;
     justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
+    margin: auto;
     a i {
         font-size: 2.5rem;
     }

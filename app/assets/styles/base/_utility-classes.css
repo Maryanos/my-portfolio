@@ -19,6 +19,31 @@
 
 
 /* Reusable Classes */
+.wrapper {
+    padding: 2.5rem;
+
+    @mixin tablet {
+        padding: 5rem;
+    }
+    @mixin laptop-small {
+        padding: 10rem;
+    }
+    @mixin desktop {
+        padding: 10rem 15rem;
+    }
+}
+.center-v {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.center-h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .hide {
     display:none;
 }
@@ -35,16 +60,6 @@
 .p-bold {
     font-size: 1.8rem;
     font-weight: 500;
-}
-.center-v {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.center-h {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .img-right {
     object-position: right;
