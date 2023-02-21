@@ -167,7 +167,7 @@
             }
         }
     }
-    &__showcase-3,{
+    &__showcase-3 {
         .number {
             color: rgba(121, 138, 212, 0.4);
             top: 0rem;
