@@ -8,12 +8,12 @@ window.onscroll = function() {
     }
     else {
         stickyHeader.classList.remove("sticky-header--active")
-        if (overlayIsActive) {
+        if (overlayIsActive && screen.width < 1024) {
             stickyHeader.classList.add("sticky-header--active")
         }
     }
 
-    // Check if user is at the bottom of the page
+    // Check if user is at the bottom - active link
     let contactBtn = document.querySelector(".link-contact")
     let a = window.innerHeight
     let b = window.scrollY

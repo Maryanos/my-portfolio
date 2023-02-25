@@ -13,7 +13,24 @@
         opacity: .95;
     }
 }
+.janek {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 
+    @mixin laptop-small {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        object-fit: unset;
+    }
+}
 
 /* Hero Section */
 .hero {
@@ -173,6 +190,7 @@
 .progress-bar-fill2,
 .progress-bar-fill3,
 .progress-bar-fill4,
+.progress-bar-fill8,
 .progress-bar-fill5,
 .progress-bar-fill6,
 .progress-bar-fill7 {
@@ -191,7 +209,10 @@
     animation: python-bar 3s normal forwards;/*width: 60%;*/
 }
 .progress-bar-fill4 {
-    animation: js-bar 1.25s normal forwards;/*width: 25%;*/
+    animation: js-bar 2.75s normal forwards;/*width: 55%;*/
+}
+.progress-bar-fill8 {
+    animation: react-bar 2s normal forwards;/*width: 40%;*/
 }
 .progress-bar-fill5 {
     animation: php-bar 1.75s normal forwards;/*width: 35%;*/
@@ -227,6 +248,14 @@
     }
 }
 @keyframes js-bar {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 55%;
+    }
+}
+@keyframes react-bar {
     0% {
         width: 0;
     }
