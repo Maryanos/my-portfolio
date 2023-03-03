@@ -1,0 +1,39 @@
+ /* Globals */
+ $siteBg: #09192f;
+ $mainText: #c2e0ff;
+ $lightBlue: #E5F2FF;
+ $red: #D54E4E;
+ $cta: #6C1CF3;
+ $midBlue: #67B3FF;
+ $scrollTrack: #09192f;
+ $scrollBar: #193c6e;
+
+
+ /* Headers */
+ $h1: #c2e0ff;
+ $h2: #c2e0ff;
+ $h3: #c2e0ff;
+
+ /* Hero Section */
+ $heroTitle: #5085BB;
+
+
+ /* Main Sections */
+ $mainSkills: #142E48;
+ $otherSkills: #1A3B6A;
+
+ /* Main Skills Card */
+ $barFill: #141f3a;
+ $cardFill: #142E48;
+ $card2Fill: #1A3B6A;
+
+ /* Form */
+ $formFrame: #5e9fe0;
+ $placeholder: #4B759D;
+
+ /* Footer */
+ $copyrights: #6EA2D2;
+
+
+ $blue3: #67B3FF 0%, #c2e0ff 50%, #67B3FF 100%;
+ $blue5: #c2e0ff 0%, #67B3FF 25%, #6C1CF3 50%, #67B3FF 75%, #c2e0ff 100%;
