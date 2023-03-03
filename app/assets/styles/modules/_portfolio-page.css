@@ -21,7 +21,7 @@
   &__intro-1 {
     display: flex;
     flex-direction: column;
-    padding-top: 5rem;
+    padding-top: 10rem;
 
     @mixin desktop-large {
       padding: 5rem;
@@ -89,17 +89,19 @@
     }
 
     &__title {
-        display: flex;
-        align-items: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     #astonished svg {
-        max-height: 100px;
-        display: block;
+      max-height: 100px;
+      display: block;
+      margin-bottom: 3.5rem;
 
-        @include tablet {
-            margin-left: 8rem;
-        }
+      @include tablet {
+        margin-left: 8rem;
+      }
     }
   }
 
@@ -107,7 +109,7 @@
   &__showcase-3,
   &__showcase-4 {
     max-width: 2000px;
-    margin: 12rem auto 8rem;
+    margin: 15rem auto 8rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -191,7 +193,7 @@
   &__showcase-4,
   &__showcase-2 {
     .number {
-      top: 0rem;
+      top: -3rem;
       left: 3rem;
       color: rgba(165, 173, 211, 0.4);
 
@@ -209,7 +211,7 @@
   &__showcase-3 {
     .number {
       color: rgba(121, 138, 212, 0.4);
-      top: 0rem;
+      top: -3rem;
       right: 3rem;
 
       @mixin laptop {
