@@ -6,7 +6,6 @@ import 'lazysizes'
 /* Logics */
 import "./modules/Overlay"
 import "./modules/StickyHeader"
-import "./modules/ImagesSlider"
 
 
 /* Modules */
