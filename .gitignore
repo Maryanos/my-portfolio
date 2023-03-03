@@ -1,4 +1,6 @@
+package-lock.json
 .vscode
+
 # Numerous always-ignore extensions
 *.diff
 *.err
