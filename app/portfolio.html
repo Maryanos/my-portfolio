@@ -217,37 +217,51 @@
         </div>
         <div class="bg-fade"></div>
         <div class="menu-overlay">
-            <div class="overlay-logo">
-                <a href="/">
-                    <svg id="mr-logo" class="logo mr-logo" width="200px" height="200px" viewBox="0 0 671 631"></svg>
-                </a>
-            </div>
-            <div class="overlay-content">
-                <nav class="overlay-content__nav">
-                    <a href="index.html" class="link-home anim-underline">Home</a>
-                    <a href="#" class="link-active anim-underline">Portfolio</a>
-                    <a href="#contact" class="link-contact anim-underline">Contact</a>
-                    <a href="mailto:studio@webcraff.com" target="_blank" class="anim-underline">studio@webcraff.com</a>
-                </nav>
-            </div>
-            <div class="overlay-icons-wrapper">
-                <div class="overlay-social-icons">
-                    <a href="https://github.com/Maryanos" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.facebook.com/webcraff" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/webcraff/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/mariusz-raszewski/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://webcraff.com/"><i class="fa-light fa-globe" target="_blank"></i></a>
-                    <a href="mailto:studio@webcraff.com" target="_blank"><i class="fa-light fa-envelope"></i></a>
-                    <a href="https://m.me/webcraff" target="_blank"><i class="fa-brands fa-facebook-messenger"></i></a>
-                    <div class="left-line"></div>
-                </div>
-            </div>
-            <div class="close-btn">
-                <div class="overlay-trigger menu-overlay-icon"><i class="fa-light fa-angle-right-from-bracket"></i></div>
-            </div>
+          <div id="lines" >
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.1/lottie.min.js"></script>
+            <script>
+              var animation = bodymovin.loadAnimation({
+              container: document.getElementById('lines'),
+              path: './assets/images/lines.json',
+              renderer: 'svg',
+              loop: true,
+              autoplay: true,
+              name: "lines",
+              });
+            </script>
+          </div>
+          <div class="overlay-logo">
+              <a href="/">
+                  <svg id="mr-logo" class="logo mr-logo" width="200px" height="200px" viewBox="0 0 671 631"></svg>
+              </a>
+          </div>
+          <div class="overlay-content">
+              <nav class="overlay-content__nav">
+                  <a href="index.html" class="link-home anim-underline">Home</a>
+                  <a href="#" class="link-active anim-underline">Portfolio</a>
+                  <a href="#contact" class="link-contact anim-underline">Contact</a>
+                  <a href="mailto:studio@webcraff.com" target="_blank" class="anim-underline">studio@webcraff.com</a>
+              </nav>
+          </div>
+          <div class="overlay-icons-wrapper">
+              <div class="overlay-social-icons">
+                  <a href="https://github.com/Maryanos" target="_blank"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://www.facebook.com/webcraff" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://www.instagram.com/webcraff/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/mariusz-raszewski/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="https://webcraff.com/"><i class="fa-light fa-globe" target="_blank"></i></a>
+                  <a href="mailto:studio@webcraff.com" target="_blank"><i class="fa-light fa-envelope"></i></a>
+                  <a href="https://m.me/webcraff" target="_blank"><i class="fa-brands fa-facebook-messenger"></i></a>
+                  <div class="left-line"></div>
+              </div>
+          </div>
+          <div class="close-btn">
+            <div class="overlay-trigger menu-overlay-icon"><i class="fa-light fa-arrow-right-from-bracket"></i></div>
+          </div>
+          </div>
         </div>
         <script>
-            AOS.init({duration: 1400});
+          AOS.init({duration: 1400});
         </script>
     </body>
 </html>
