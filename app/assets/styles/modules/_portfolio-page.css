@@ -118,74 +118,6 @@
       margin: 5rem auto 12rem;
     }
   }
-
-  .showcase {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 3rem;
-    z-index: 1;
-    position: relative;
-
-    @mixin tablet {
-      margin-top: 10rem;
-    }
-
-    @mixin desktop-large {
-      max-width: 100%;
-      margin: 3rem auto 5rem;
-    }
-
-    .number {
-      position: absolute;
-      font-size: 15rem;
-      font-weight: 600;
-      line-height: 0;
-      z-index: 2;
-
-      @mixin tablet {
-        font-size: 25rem;
-      }
-    }
-
-    img {
-      width: 100%;
-      height: auto;
-      border-radius: 1rem;
-      box-shadow: 10px 10px 20px rgba(22, 14, 56, 0.7);
-      transition: 0.3s ease-in;
-      display: block;
-      @mixin laptop-small {
-        max-width: 550px;
-      }
-    }
-    &__bg-shape {
-      content: "";
-      width: 80%;
-      height: 112%;
-      background-color: rgb(72, 71, 109);
-      position: absolute;
-      top: -4rem;
-      border-radius: 1rem;
-      max-width: 580px;
-
-      @mixin tablet {
-        width: 80%;
-        height: 108%;
-        max-width: unset;
-      }
-      @mixin laptop-small {
-        max-width: 750px;
-      }
-
-      @mixin desktop-large {
-        max-width: unset;
-        width: 1500px;
-        height: 110%;
-        top: -3.5rem;
-      }
-    }
-  }
   &__showcase-4,
   &__showcase-2 {
     .number {
@@ -219,6 +151,74 @@
         left: 15rem;
         top: -7rem;
       }
+    }
+  }
+}
+
+.showcase {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  z-index: 1;
+  position: relative;
+
+  @mixin tablet {
+    margin-top: 10rem;
+  }
+
+  @mixin desktop-large {
+    max-width: 100%;
+    margin: 3rem auto 5rem;
+  }
+
+  .number {
+    position: absolute;
+    font-size: 15rem;
+    font-weight: 600;
+    line-height: 0;
+    z-index: 2;
+
+    @mixin tablet {
+      font-size: 25rem;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 20px rgba(22, 14, 56, 0.7);
+    transition: 0.3s ease-in;
+    display: block;
+    @mixin laptop-small {
+      max-width: 550px;
+    }
+  }
+  &__bg-shape {
+    content: "";
+    width: 80%;
+    height: 112%;
+    background-color: rgb(72, 71, 109);
+    position: absolute;
+    top: -4rem;
+    border-radius: 1rem;
+    max-width: 580px;
+
+    @mixin tablet {
+      width: 80%;
+      height: 108%;
+      max-width: unset;
+    }
+    @mixin laptop-small {
+      max-width: 750px;
+    }
+
+    @mixin desktop-large {
+      max-width: unset;
+      width: 1500px;
+      height: 110%;
+      top: -3.5rem;
     }
   }
 }

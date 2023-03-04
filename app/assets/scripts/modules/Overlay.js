@@ -37,7 +37,6 @@ document.querySelectorAll(".overlay-trigger").forEach((e) => {
             portfolioBtn.addEventListener("click", closeOverlay)
 
             if (screen.width < 1024) {
-                //document.documentElement.style.overflow = "hidden"
                 document.body.style.height = "100%"
                 document.documentElement.style.height = "100%"
                 stickyHeader.classList.add("sticky-header--active")
@@ -55,7 +54,6 @@ document.querySelectorAll(".overlay-trigger").forEach((e) => {
             stickyHeaderIcon.classList.remove("icon-x--active")
             mainHeaderIcon.classList.remove("icon-x--active")
             if (screen.width < 1024) {
-                //document.documentElement.style.overflow = "auto"
                 document.body.style.height = "unset"
                 document.documentElement.style.height = "unset"
                 helloBtn.style.opacity = "1"

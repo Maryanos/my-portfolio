@@ -1,67 +1,66 @@
 @define-mixin mobile-tiny {
-    @media (max-width: 320px) {
-        @mixin-content;
-    }
+  @media (max-width: 320px) {
+    @mixin-content;
+  }
 }
 @define-mixin mobile-mini {
-    @media (max-width: 400px) {
-        @mixin-content;
-    }
+  @media (max-width: 400px) {
+    @mixin-content;
+  }
 }
 @define-mixin mobile-smaller {
-    @media (max-width: 490px) {
-        @mixin-content;
-    }
+  @media (max-width: 490px) {
+    @mixin-content;
+  }
 }
 @define-mixin mobile-small {
-    @media (max-width: 610px) {
-        @mixin-content;
-    }
+  @media (max-width: 610px) {
+    @mixin-content;
+  }
 }
 @define-mixin tablet {
-    @media (min-width: 768px) {
-        @mixin-content;
-    }
+  @media (min-width: 768px) {
+    @mixin-content;
+  }
 }
 @define-mixin laptop-small {
-    @media (min-width: 1025px) {
-        @mixin-content;
-    }
+  @media (min-width: 1025px) {
+    @mixin-content;
+  }
 }
 @define-mixin laptop {
-    @media (min-width: 1350px) {
-        @mixin-content;
-    }
+  @media (min-width: 1350px) {
+    @mixin-content;
+  }
 }
 @define-mixin desktop-small {
-    @media (min-width: 1550px) {
-        @mixin-content;
-    }
+  @media (min-width: 1550px) {
+    @mixin-content;
+  }
 }
 @define-mixin desktop {
-    @media (min-width: 1680px) {
-        @mixin-content;
-    }
+  @media (min-width: 1680px) {
+    @mixin-content;
+  }
 }
 @define-mixin desktop-large {
-    @media (min-width: 2000px) {
-        @mixin-content;
-    }
+  @media (min-width: 2000px) {
+    @mixin-content;
+  }
 }
-
 
 @define-mixin mobile-shortest {
-    @media (max-width: 414px) and (max-height: 675px) {
-        @mixin-content;
-    }
+  @media (max-width: 414px) and (max-height: 675px) {
+    @mixin-content;
+  }
 }
 @define-mixin mobile-shorter {
-    @media (max-width: 414px) and (max-height: 725px) {
-        @mixin-content;
-    }
+  @media (max-width: 414px) and (max-height: 725px) {
+    @mixin-content;
+  }
 }
 @define-mixin mobile-short {
-    @media (max-width: 414px) and (max-height: 783px) {
-        @mixin-content;
-    }
+  @media (max-width: 414px) and (max-height: 783px) {
+    @mixin-content;
+  }
 }
