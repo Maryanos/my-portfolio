@@ -10,9 +10,11 @@
     <script src="https://kit.fontawesome.com/fc3975c880.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.1/lottie.min.js"></script>
   </head>
   <body>
-    <img class="img-bg" src="./assets/images/sea.jpg" alt="Sea background" />
+    <video class="bg-video" playsinline muted autoplay loop poster="" src="./assets/images/waves.mp4"></video>
+    <!-- <img class="img-bg" src="./assets/images/sea.jpg" alt="Sea background" /> -->
     <div class="content-wrapper">
       <header>
         <div class="sticky-header">
@@ -164,10 +166,11 @@
     </div>
     <div class="bg-fade"></div>
     <div class="menu-overlay">
+      <div class="lottie-lines"></div>
+      <div class="overlay-content">
       <div class="overlay-logo">
         <svg id="mr-logo" class="logo mr-logo" width="200px" height="200px" viewBox="0 0 671 631"></svg>
       </div>
-      <div class="overlay-content">
         <nav class="overlay-content__nav">
           <a href="#" class="link-active anim-underline">Home</a>
           <a href="portfolio.html" class="anim-underline">Portfolio</a>

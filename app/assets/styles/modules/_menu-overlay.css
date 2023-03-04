@@ -15,6 +15,18 @@
     z-index: 2;
   }
 }
+.lottie-lines {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  opacity: 0.55;
+  top: -10rem;
+  z-index: -1;
+
+  @mixin tablet {
+    top: -20rem;
+  }
+}
 .menu-overlay {
   content: "";
   position: fixed;
@@ -258,16 +270,4 @@
 }
 
 
-#lines {
-  position: absolute;
-  right: 0;
-  object-fit: cover;
-  height: 100%;
-  opacity: 0.55;
-  top: -10rem;
-  z-index: -1;
 
-  @mixin tablet {
-    top: -20rem;
-  }
-}
