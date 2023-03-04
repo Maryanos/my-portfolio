@@ -23,7 +23,8 @@
         }
         @mixin laptop-small {
             width: 10%;
-            min-width: 200px;
+            min-width: 100px;
+            z-index: 4;
         }
         @mixin desktop {
             position: fixed;

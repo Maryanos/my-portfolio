@@ -36,11 +36,11 @@
   width: 0%;
   max-width: 100%;
   margin-left: -3px;
-  background-color: rgb(7, 18, 33, 0.95);
+  background-color: #071221;
   transition: 0.5s ease-out;
   border-right: solid 3px #c7b6e5;
   border-radius: 0 50px 25px 0;
-  z-index: 3;
+  z-index: 5;
   overflow-x: hidden;
   overflow-y: scroll;
   overscroll-behavior: contain;

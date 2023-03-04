@@ -93,6 +93,7 @@ a {
     text-decoration: none;
     pointer-events: all;
     color: $mainText;
+    margin: 0;
 }
 /* Scrollbar Firefox */
 * {
