@@ -5,7 +5,11 @@
   padding-bottom: 2rem;
 
   h1 {
-    font-size: 7rem;
+    font-size: 5.5rem;
+
+    @mixin tablet {
+      font-size: 7rem;
+    }
   }
 }
 
@@ -15,13 +19,20 @@
   display: flex;
   flex-direction: column;
 
+  &__section-wrapper {
+    margin: 5rem 0;
+
+    @mixin desktop {
+      margin: 1.5rem;
+    }
+  }
+
   &__intro-4,
   &__intro-3,
   &__intro-2,
   &__intro-1 {
     display: flex;
     flex-direction: column;
-    padding-top: 10rem;
 
     @mixin desktop-large {
       padding: 5rem;
@@ -34,7 +45,6 @@
 
   &__intro-4,
   &__intro-2 {
-    padding-top: 5rem;
 
     @mixin laptop-small {
       max-width: 80%;
@@ -53,7 +63,6 @@
 
   &__intro-3,
   &__intro-1 {
-    padding-top: 5rem;
 
     @mixin laptop-small {
       max-width: 80%;

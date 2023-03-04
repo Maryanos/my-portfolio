@@ -186,7 +186,7 @@
     border-radius: 45px;
     transition: all .3s;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.359);
-    z-index: 4;
+    z-index: 6;
 
     @mixin tablet {
         left: calc((75% - 285px)/2);
