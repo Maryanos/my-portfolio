@@ -15,8 +15,6 @@ body {
     width: 100%!important;
     font-size: 1.7rem;
     position: relative;
-    /*background-image: url("./assets/images/sea.jpg");;
-    background-size: cover ;*/
     overflow-x: hidden!important;
 }
 #canvas {
